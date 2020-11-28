@@ -27,11 +27,6 @@ const Calculator = {
     }
 };
 
-arrayOfTransforms = [
-    function(a){ return a * 2 },
-    function(a){ return a + 1000},
-    function(a){ return a % 7 }
-  ]
 function actionApplyer(start, array){
     let num = start
 
