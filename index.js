@@ -1,16 +1,41 @@
 function saturdayFun(task= "roller-skate") {
-    console.log(`This Saturday, I want to ${task}! `);
+    return `This Saturday, I want to ${task}!`;
 }
 //saturdayFun()
 
 
-function mondayWork(task= "go to the office" ) {
-    console.log(`This Monday, I will ${task }. `)
+let mondayWork = function (task= "go to the office" ) {
+    return `This Monday, I will ${task }.`
 }
 // mondayWork()
 
-function wrapAdjective(name = "*"){
+let wrapAdjective = function(name = "*"){
     return function(para ="special"){
-        console.log(`You are ${para}`)
+        return `You are ${name}${para}${name}`
     }
 }
+
+const Calculator = {
+    add: function(a,b) {
+      return a + b;
+    },
+    subtract: function(a,b) {
+      return a - b
+    },
+    multiply: function(a,b) {
+      return a * b
+    },
+    divide: function(a,b) {
+      return a / b;
+    }
+  }
+  
+  let actionApplyer = function(start, ray) {
+    let a = start
+  
+    for (let i = 0; i < ray.length; i++ ){
+      a = ray[i](a)
+    }
+  
+    return a
+  }
